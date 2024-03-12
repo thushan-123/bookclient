@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://bk-4.onrender.com/Book/Details");
+        const response = await axios.get("https://localhost:8000/Book/Details");
         setDataset(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
