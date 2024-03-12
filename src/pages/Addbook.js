@@ -39,7 +39,7 @@ export default function Addbook() {
         console.log(err)
       })
       */
-      await axios.post("https://bk-4.onrender.com/Book/Uploading/Data/",dataset).then((res)=>{
+      await axios.post("http://localhost/Book/Uploading/Data/",dataset).then((res)=>{
         console.log(res)
         if(res.data.status==="inserted"){
           window.alert("Insert Complete")
