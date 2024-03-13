@@ -19,7 +19,7 @@ export default  function Singin() {
     console.log(dataset)
 
     try{
-        await axios.post("http://localhost:8000/User/Getdata/",dataset)
+        await axios.post("http://20.211.153.55/api/User/Getdata/",dataset)
         .then((res)=>{
           console.log(res)
           const status = res.data["status"]
