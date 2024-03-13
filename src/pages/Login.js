@@ -19,7 +19,7 @@ const Login = () => {
     console.log(dataset);
 
     try{
-      await axios.post("http://104.43.111.192:8000/User/Checkdata/",dataset)
+      await axios.post("http://localhost:8000/User/Checkdata/",dataset)
       .then((res)=>{
         console.log(res)
         const status = res.data["status"]
